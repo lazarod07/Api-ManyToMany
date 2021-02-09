@@ -13,15 +13,15 @@ import co.cristian.springboot.quileiaapi.models.services.IRestauranteService;
 @RestController
 @RequestMapping("/api")
 public class RestauranteRestController {
-	
+
 	@Autowired
 	private IRestauranteService restauranteService;
 
 	@GetMapping("/restaurantes")
-	public List<Restaurante> index(){
-		
+	public List<Restaurante> index() {
+
 		return restauranteService.findAll();
-		
+
 	}
-	
+
 }
